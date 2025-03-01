@@ -1,10 +1,10 @@
 import "./App.css";
-import LayoutDefault from "./layout/LayoutDefault";
+import { AllRouter } from "./components/AllRouter";
 
 function App() {
   return (
     <>
-      <LayoutDefault />
+      <AllRouter />
     </>
   );
 }

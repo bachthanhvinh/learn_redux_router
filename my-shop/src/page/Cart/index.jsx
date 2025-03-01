@@ -1,5 +1,11 @@
+import { useSelector } from "react-redux";
+
 function Cart() {
-  return <>Page Cart</>;
+  return (
+    <>
+      <div>Trang giỏ hàng</div>
+    </>
+  );
 }
 
 export default Cart;

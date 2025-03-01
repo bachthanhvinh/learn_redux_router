@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #33e6e9;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  &__item {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    &--active {
+      color: white;
+    }
+  }
+}
+.main {
+  margin: 50px 20px;
+}
+.footer {
+  padding: 15px;
+  background-color: rgb(51, 230, 233);
+
+  text-align: center;
+}

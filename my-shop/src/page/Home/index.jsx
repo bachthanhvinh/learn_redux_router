@@ -1,5 +1,12 @@
+import Product from "../../components/Product";
+
 function Home() {
-  return <>page Home</>;
+  return (
+    <>
+      <div>Danh sách sản phẩm</div>
+      <Product />
+    </>
+  );
 }
 
 export default Home;

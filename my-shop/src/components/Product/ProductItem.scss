@@ -1,0 +1,19 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__image {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__newPrice {
+    color: red;
+    font-size: 18px;
+  }
+  &__oldPrice {
+    text-decoration: line-through;
+  }
+}
