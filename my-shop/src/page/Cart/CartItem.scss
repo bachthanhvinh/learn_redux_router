@@ -1,0 +1,70 @@
+.cart {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__image {
+    width: 200px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__btn--up,
+  &__btn--down {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  &__btn {
+    display: flex;
+    gap: 10px;
+  }
+  &__btn--delete {
+    color: red;
+    background-color: transparent;
+    border: none;
+    margin: 0 40px 0 40px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  &__deleteAll {
+    padding: 10px;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 1s;
+    background-color: #eae4e4;
+    &:hover {
+      background-color: rgb(191, 186, 186);
+    }
+  }
+
+  &__allCart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__totalPrice {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    span {
+      color: red;
+    }
+  }
+  &__oldPrice {
+    text-decoration: line-through;
+  }
+}
+.ipCart {
+  width: 20px;
+  height: 17px;
+  text-align: center;
+}

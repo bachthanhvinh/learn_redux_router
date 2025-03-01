@@ -12,3 +12,14 @@ export const updateCartProduct = (id, quantity = 1) => {
     quantity: quantity,
   };
 };
+export const cartDelete = (id) => {
+  return {
+    type: "DELETE__CART",
+    id: id,
+  };
+};
+export const cartDeleteAll = () => {
+  return {
+    type: "ALLDELETE__CART",
+  };
+};

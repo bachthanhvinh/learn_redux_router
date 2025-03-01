@@ -7,7 +7,7 @@ function CartMini(props) {
   const total = cart.reduce((sum, item) => {
     return sum + item.quantity;
   }, 0);
-  console.log(total);
+  // console.log(total);
   return (
     <>
       <NavLink className={item} to="cart">

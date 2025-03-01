@@ -1,5 +1,5 @@
 function CartReducer(state = [], action) {
-  const newState = [...state];
+  let newState = [...state];
   switch (action.type) {
     case "ADD__CART":
       return [
@@ -16,6 +16,11 @@ function CartReducer(state = [], action) {
           ? { ...item, quantity: item.quantity + action.quantity }
           : item
       );
+    case "DELETE__CART":
+      newState = newState.filter((item) => item.id !== action.id);
+      return newState;
+    case "ALLDELETE__CART":
+      return [];
     default:
       return state;
   }
